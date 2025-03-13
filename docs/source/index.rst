@@ -6,6 +6,10 @@
 Welcome to Bluetooth's documentation!
 ==================================================
 
+.. image:: images/bluetooth-logo/bluetooth-logo.*
+   :width: 600
+   :alt: Bluetooth logo
+
 **Lumache** (/lu'make/) is a Python library for cooks and food lovers
 that creates recipes mixing random ingredients.
 It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
