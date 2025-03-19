@@ -8,3 +8,7 @@ This is a list of online sources that are useful for learning more about the top
 - **Bluetooth Developer Portal**: The official Bluetooth Developer Portal `<https://developer.bluetooth.com/>`_.
 - **Electronics Notes**: A short tutorial summarizing Bluetooth to a single web page `How Does Bluetooth Work <https://www.electronics-notes.com/articles/connectivity/bluetooth/how-bluetooth-works.php>`_.
 - **Patent**: A US patent about audio in Bluetooth `ULTRA-LOW LATENCY AUDIO OVER BLUETOOTH <https://www.freepatentsonline.com/y2019/0104424.html>`_.
+
+Good Documents
+***************
+- **The Bluetooth® Low Energy Primer** A 75 long primer to Blutooth. `<https://www.bluetooth.com/wp-content/uploads/2022/05/the-bluetooth-le-primer-v1.2.0.pdf>`_.
