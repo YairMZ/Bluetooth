@@ -20,13 +20,7 @@ Welcome to Bluetooth's documentation!
    :caption: Contents:
 
    sources
-   usage
-   api
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   to_read
+   overview
+   glossary
+   idx
