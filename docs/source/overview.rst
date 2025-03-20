@@ -51,7 +51,7 @@ The table below compares the key characteristics of Bluetooth Classic and Blueto
       - GFSK, :math:`\pi / 4` DQPSK, 8DPSK
       - GFSK
     * - Data Rate
-      - 8DPSK)\: 3 Mb/s, :math:`\pi / 4` DQPSK\: 2 Mb/s, GFSK: 1 Mb/s
+      - 8DPSK\: 3 Mb/s, :math:`\pi / 4` DQPSK\: 2 Mb/s, GFSK: 1 Mb/s
       - LE 2M PHY\: 2 Mb/s, LE 1M PHY\: 1 Mb/s, LE Coded PHY (S=2)\: 500 Kb/s, LE Coded PHY (S=8)\: 125 Kb/s
     * - TX Power
       - :math:`\leq` 100 mW (+20 dBm)

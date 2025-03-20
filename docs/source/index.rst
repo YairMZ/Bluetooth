@@ -22,5 +22,7 @@ Welcome to Bluetooth's documentation!
    sources
    to_read
    overview
+   history
+   ble
    glossary
    idx
