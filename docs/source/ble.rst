@@ -58,8 +58,95 @@ Bluetooth system to consist of host and controller components from different man
    :width: 600
    :alt: BLE layers
 
+
 Bluetooth mesh (as part of BLE) uses an alternative stack shown in the image below:
 
 .. image:: images/ble_mesh_layers.png
    :width: 600
    :alt: BLE mesh layers
+
+The table below briefly describes the responsibilities of each layer in the BLE stack:
+
+.. table:: BLE Stack Layer Responsibilities
+   :class: longtable
+   :widths: auto
+   :align: left
+   :name: ble_stack_layers_table
+
+   +----------------------------+------------------------------------------------------+
+   | Layer                      | Key Responsibilities                                 |
+   +============================+======================================================+
+   | Physical Layer             | Defines all aspects of Bluetooth technology that are |
+   |                            | related to the use of radio (RF) including           |
+   |                            | modulation schemes, frequency bands, channel use,    |
+   |                            | transmitter and receiver characteristics.            |
+   |                            |                                                      |
+   |                            | Several distinct, supported combinations of physical |
+   |                            | layer parameters are defined and are referred to as  |
+   |                            | PHYs.                                                |
+   +----------------------------+------------------------------------------------------+
+   | Link Layer                 | Defines air interface packet formats, bit stream     |
+   |                            | processing procedures such as error checking, a      |
+   |                            | state machine and protocols for over-the-air         |
+   |                            | communication and link control.                      |
+   |                            |                                                      |
+   |                            | Defines several distinct ways of using the           |
+   |                            | underlying radio for connectionless, connection-     |
+   |                            | oriented and isochronous communication known as      |
+   |                            | logical transports.                                  |
+   +----------------------------+------------------------------------------------------+
+   | Isochronous Adaptation     | Allows different frame durations to be used by       |
+   | Layer (ISOAL)              | devices using isochronous communication.             |
+   |                            |                                                      |
+   |                            | Performs segmentation and reassembly of framed PDUs  |
+   |                            | or fragmentation and recombination of unframed PDUs. |
+   +----------------------------+------------------------------------------------------+
+   | Host Controller Interface  | Provides a well-defined functional interface for     |
+   | (HCI)                      | bi-directional communication of commands and data    |
+   |                            | between the host component and the controller.       |
+   |                            |                                                      |
+   |                            | Supported by any one of several physical transport   |
+   |                            | implementations.                                     |
+   +----------------------------+------------------------------------------------------+
+   | Logical Link Control and   | Acts as a protocol multiplexer within the host,      |
+   | Adaptation Protocol        | ensuring protocols are serviced by the appropriate   |
+   | (L2CAP)                    | host component.                                      |
+   |                            |                                                      |
+   |                            | Performs segmentation and reassembly of PDUs/SDUs    |
+   |                            | between the layer below and the layer above L2CAP.   |
+   +----------------------------+------------------------------------------------------+
+   | Security Manager Protocol  | A protocol used during the execution of security     |
+   | (SMP)                      | procedures such as pairing.                          |
+   +----------------------------+------------------------------------------------------+
+   | Attribute Protocol         | A protocol used by an ATT client and an ATT server   |
+   | (ATT)                      | which allows the discovery and use of data in the    |
+   |                            | server's attribute table.                            |
+   +----------------------------+------------------------------------------------------+
+   | Generic Attribute Profile  | Defines high level data types known as services,     |
+   | (GATT)                     | characteristics and descriptors in terms of          |
+   |                            | underlying attributes in the attribute table.        |
+   |                            |                                                      |
+   |                            | Defines higher level procedures for using ATT to     |
+   |                            | work with the attribute table.                       |
+   +----------------------------+------------------------------------------------------+
+   | Generic Access Profile     | Defines operational modes and procedures which may   |
+   | (GAP)                      | be used when in a non-connected state such as how    |
+   |                            | to use advertising for connectionless communication  |
+   |                            | and how to perform device discovery.                 |
+   |                            |                                                      |
+   |                            | Defines security levels and modes.                   |
+   |                            |                                                      |
+   |                            | Defines some user interface standards.               |
+   +----------------------------+------------------------------------------------------+
+
+
+Further details on each layer appears read below:
+
+.. toctree::
+    :maxdepth: 2
+
+    physical_layer
+    link_layer
+
+
+
